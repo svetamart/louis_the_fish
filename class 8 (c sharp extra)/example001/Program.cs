@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System; // используем/импортируем определенное пространство имен
+
+// using System.Text;
+
+class Program // внутри класса находятся методы
+{
+    static public void Main(); // точка входа
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
+
+

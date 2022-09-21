@@ -4,9 +4,14 @@
 
 class Program // внутри класса находятся методы
 {
-    static public void Main(); // точка входа
+    static public void Main(string[] args); // точка входа
     {
-        Console.WriteLine("Hello, World!");
+        if(args.Length >= 1)
+        {
+            Console.WriteLine($"Hello, {args[0].Remove("-","")}!");
+        }
+        
+        Console.ReadKey();
     }
 }
 
